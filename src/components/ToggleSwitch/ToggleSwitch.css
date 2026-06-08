@@ -1,1 +1,73 @@
 /* Add ToggleSwitch styles here */
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Accessible hiding */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* iOS-style track */
+.toggle-track {
+  position: relative;
+  width: 52px;
+  height: 32px;
+  background-color: #d1d1d6;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  display: inline-block;
+}
+
+/* iOS-style thumb */
+.toggle-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 28px;
+  height: 28px;
+  background: white;
+  border-radius: 50%;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.2),
+    0 1px 1px rgba(0, 0, 0, 0.14);
+  transition: transform 0.25s ease;
+}
+
+/* Checked state */
+input:checked + .toggle-track {
+  background-color: #34c759;
+}
+
+input:checked + .toggle-track .toggle-thumb {
+  transform: translateX(20px);
+}
+
+/* Focus accessibility */
+input:focus-visible + .toggle-track {
+  outline: 3px solid #0a84ff;
+  outline-offset: 2px;
+}
+
+/* Disabled state */
+input:disabled + .toggle-track {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.toggle-label {
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+}
