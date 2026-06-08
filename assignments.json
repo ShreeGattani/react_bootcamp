@@ -21,38 +21,38 @@
   },
   "ToggleSwitch": {
     "day": 6,
-    "assignedDate": "2026-06-06"
+    "assignedDate": "2026-06-08"
   },
   "Tooltip": {
     "day": 7,
-    "assignedDate": "2026-06-07"
+    "assignedDate": "2026-06-09"
   },
   "Modal": {
     "day": 8,
-    "assignedDate": "2026-06-08"
+    "assignedDate": "2026-06-10"
   },
   "Accordion": {
     "day": 9,
-    "assignedDate": "2026-06-09"
+    "assignedDate": "2026-06-11"
   },
   "Tabs": {
     "day": 10,
-    "assignedDate": "2026-06-10"
+    "assignedDate": "2026-06-12"
   },
   "Toast": {
     "day": 11,
-    "assignedDate": "2026-06-11"
+    "assignedDate": "2026-06-13"
   },
   "Dropdown": {
     "day": 12,
-    "assignedDate": "2026-06-12"
+    "assignedDate": "2026-06-14"
   },
   "Carousel": {
     "day": 13,
-    "assignedDate": "2026-06-13"
+    "assignedDate": "2026-06-15"
   },
   "DataTable": {
     "day": 14,
-    "assignedDate": "2026-06-14"
+    "assignedDate": "2026-06-16"
   }
 }
