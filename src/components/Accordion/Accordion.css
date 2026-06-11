@@ -1,4 +1,4 @@
-/* Add Accordion styles here */
+/* Main accordion container */
 .accordion {
   width: 100%;
   border: 1px solid #ddd;
@@ -6,43 +6,55 @@
   overflow: hidden;
 }
 
+/* Individual accordion item */
 .accordion-item {
   border-bottom: 1px solid #ddd;
 }
 
+/* Remove border from last item */
 .accordion-item:last-child {
   border-bottom: none;
 }
 
+/* Accordion header button */
 .accordion-header {
   width: 100%;
   padding: 16px;
   border: none;
   background: #f8f8f8;
   cursor: pointer;
+
+  /* Align title and icon */
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   font-size: 16px;
   font-weight: 600;
   text-align: left;
 }
 
+/* Hover effect for better UX */
 .accordion-header:hover {
   background: #efefef;
 }
 
+/* Content area shown when expanded */
 .accordion-content {
   padding: 16px;
   background: white;
   line-height: 1.5;
 }
 
+/* Plus icon */
 .accordion-icon {
-  transition: transform 0.2s ease;
   font-size: 20px;
+
+  /* Smooth rotation animation */
+  transition: transform 0.2s ease;
 }
 
+/* Rotate icon when section is open */
 .accordion-icon.open {
   transform: rotate(45deg);
 }
