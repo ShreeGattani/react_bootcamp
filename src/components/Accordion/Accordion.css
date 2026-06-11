@@ -1,1 +1,48 @@
 /* Add Accordion styles here */
+.accordion {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  background: #f8f8f8;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.accordion-header:hover {
+  background: #efefef;
+}
+
+.accordion-content {
+  padding: 16px;
+  background: white;
+  line-height: 1.5;
+}
+
+.accordion-icon {
+  transition: transform 0.2s ease;
+  font-size: 20px;
+}
+
+.accordion-icon.open {
+  transform: rotate(45deg);
+}
