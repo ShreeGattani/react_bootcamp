@@ -1,1 +1,44 @@
 /* Add Tabs styles here */
+/* Main container */
+.tabs-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Tab buttons container */
+.tabs-header {
+  display: flex;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Individual tab button */
+.tab-button {
+  padding: 12px 20px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.tab-button:hover {
+  background-color: #f5f5f5;
+}
+
+/* Active tab */
+.tab-active {
+  border-bottom: 3px solid #007bff;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Content panel */
+.tab-content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-top: none;
+  background: #fff;
+}
