@@ -1,1 +1,49 @@
 /* Add Carousel styles here */
+.carousel {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.carousel-image-container {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.carousel-controls button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+}
+
+.carousel-controls button:disabled {
+  background-color: #bdbdbd;
+  cursor: not-allowed;
+}
+
+.carousel-indicator {
+  font-weight: 600;
+  min-width: 50px;
+}
